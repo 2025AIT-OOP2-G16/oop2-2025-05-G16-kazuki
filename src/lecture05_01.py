@@ -26,6 +26,6 @@ def lecture05_01():
                 if (b, g, r) == (255, 255, 255):
                     google_img[y, x] = capture_img[y % c_hight, x % c_width]
 
-    #　書き込み処理
+    #書き込み処理
     cv2.imwrite('output_images/lecture05_result.png', google_img)
 
