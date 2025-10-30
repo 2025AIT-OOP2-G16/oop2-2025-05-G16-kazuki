@@ -29,3 +29,4 @@ def lecture05_01():
     #書き込み処理
     cv2.imwrite('output_images/lecture05_result.png', google_img)
 
+
