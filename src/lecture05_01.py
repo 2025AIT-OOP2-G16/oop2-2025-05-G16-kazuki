@@ -32,3 +32,4 @@ def lecture05_01():
 
     app.write_img('output_images/lecture05_01_K24113.png')
 
+
