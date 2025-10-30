@@ -31,5 +31,3 @@ def lecture05_01():
                 google_img[y, x] = (b2, g2, r2)
 
     app.write_img('output_images/lecture05_01_K24113.png')
-
-
