@@ -23,9 +23,9 @@ def lecture05_01():
             g, b, r = google_img[y, x]
             # もし白色(255,255,255)だったら置き換える
             if (b, g, r) == (255, 255, 255):
-                pass
-                #implement me
+                if (b, g, r) == (255, 255, 255):
+                    google_img[y, x] = capture_img[y % c_hight, x % c_width]
 
     # 書き込み処理
-    # implement me
+    cv2.imwrite('output_images/lecture05_result.png', google_img)
 
