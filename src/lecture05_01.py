@@ -20,12 +20,15 @@ def lecture05_01():
 
     for x in range(g_width):
         for y in range(g_hight):
-            g, b, r = google_img[y, x]
-            # もし白色(255,255,255)だったら置き換える
-            if (b, g, r) == (255, 255, 255):
-                pass
-                #implement me
 
-    # 書き込み処理
-    # implement me
+            #切り返しをしたい
+            #Mod演算を使う？
+            b1, g1, r1 = google_img[y, x]
+            b2, g2, r2 = capture_img[y, x]
+            # もし白色(255,255,255)だったら置き換える
+            if (b1, g1, r1) == (255, 255, 255):
+                pass
+                google_img[y, x] = (b2, g2, r2)
+
+    app.write_img('output_images/lecture05_01_K24113.png')
 
